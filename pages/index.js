@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Footer from "../comps/Footer";
 import Navbar from "../comps/Navbar";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -16,6 +17,10 @@ export default function Home() {
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
         perferendis suscipit quasi reprehenderit nulla assumenda.
       </p>
+
+      <Link href="/ninjas">
+        <a>See Ninja Listing</a>
+      </Link>
       <Footer />
     </div>
   );
